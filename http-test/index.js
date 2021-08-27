@@ -25,6 +25,18 @@ const server = http.createServer((req, res) => {
     if (method === 'GET') {
         res.end(JSON.stringify(resData))
     }
+    if (method === 'POST') {
+        let postData = ''
+        req.on('data', chunk => {
+            postData += chunk.toString()
+        })
+        req.on('end', () => {
+            resData.postData = postData
+            req.end(
+                JSON.stringify(resData  )
+            )
+        })
+    }
 })
 
 server.listen(8000)
