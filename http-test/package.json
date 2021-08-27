@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-note",
+  "version": "1.0.0",
+  "description": "nodejs note",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/younggg96/nodejs-note.git"
+  },
+  "author": "Guanggeng Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/younggg96/nodejs-note/issues"
+  },
+  "homepage": "https://github.com/younggg96/nodejs-note#readme"
+}
